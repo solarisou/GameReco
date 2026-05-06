@@ -1,0 +1,16 @@
+python -m venv venv
+venv\Scripts\activate * à faire pour app.py lancer Flask :) * 
+pip install -r requirements.txt
+
+
+USE ter_reco;
+SELECT COUNT(*) FROM items WHERE type = 'manga';
+SELECT COUNT(*) FROM genres;
+SELECT title, avg_rating FROM items WHERE type = 'manga' ORDER BY avg_rating DESC LIMIT 5;
+
+
+
+Pour Tensorflows (TSFR)
+dans le (venv)
+
+pip install tensorflow tensorflow-recommenders

@@ -1,0 +1,8 @@
+C:\Users\Mtara\DW2\ProjetDevWeb\mysql-9.3.0-winx64\bin Pour accéder a la BDD
+
+mysql -u root -p 
+
+
+mdp : 123456 
+
+mysql> source  D:\M1DSC\TER M1\create.sql
