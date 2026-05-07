@@ -2,6 +2,8 @@ package com.ter.reco_backend.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,6 +15,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+
 
 @Entity
 @Table(name = "genres")
@@ -29,6 +33,7 @@ public class Genre {
     @Column(nullable = false, unique = true, length = 50)
     private String name;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "genres")
     private List<Item> items;
 }
