@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 import logging
 
@@ -23,3 +26,8 @@ HYBRID_CONTENT_WEIGHT = float(os.getenv("HYBRID_CONTENT_WEIGHT", "0.4"))
 
 # Nombre de recommandations retournées par défaut
 TOP_N = int(os.getenv("TOP_N", "10"))
+
+
+# ── IGDB ─────────────────────────────────────────────────────
+IGDB_CLIENT_ID     = os.getenv("IGDB_CLIENT_ID",     "")
+IGDB_CLIENT_SECRET = os.getenv("IGDB_CLIENT_SECRET", "")

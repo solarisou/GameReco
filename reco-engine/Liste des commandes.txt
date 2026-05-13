@@ -1,5 +1,5 @@
 python -m venv venv
-venv\Scripts\activate * à faire pour app.py lancer Flask :) * 
+venv\Scripts\activate * à faire pour api.py lancer Flask :) * 
 pip install -r requirements.txt
 
 
@@ -14,3 +14,7 @@ Pour Tensorflows (TSFR)
 dans le (venv)
 
 pip install tensorflow tensorflow-recommenders
+
+
+Pour igdb_loader.py il faut charger le .env avec cette commande 
+pip install python-dotenv --break-system-packages
