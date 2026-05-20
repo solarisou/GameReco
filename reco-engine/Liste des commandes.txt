@@ -18,3 +18,8 @@ pip install tensorflow tensorflow-recommenders
 
 Pour igdb_loader.py il faut charger le .env avec cette commande 
 pip install python-dotenv --break-system-packages
+
+
+
+token thunder client de sola@test.fr
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YzAwMGIxMS0xN2YwLTQ0MTAtODUwYS1hN2ZkOTJjYzgyNGEiLCJpYXQiOjE3Nzg3MTMyNTksImV4cCI6MTc3ODc5OTY1OX0.vwBTQoKFlDf_zd1YTznFmpYGQRHyFY1hL2JngIXqfKM

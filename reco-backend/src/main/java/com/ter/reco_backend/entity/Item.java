@@ -4,8 +4,11 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.UuidGenerator;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.LocalDateTime;
 import java.util.List;
+
 
 @Entity
 @Table(name = "items")
@@ -49,7 +52,7 @@ public class Item {
         inverseJoinColumns = @JoinColumn(name = "genre_id")
     )
     private List<Genre> genres;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Rating> ratings;
 
